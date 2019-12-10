@@ -1,0 +1,19 @@
+td {
+	padding-left: 10px;
+	padding-right: 10px;
+}
+
+.choice{
+	font-family: 'IM Fell Double Pica', serif;
+	font-size: 20pt;
+	margin: 0px;
+}
+
+p{
+	margin-top: 0.2em
+}
+
+.Site{
+	padding-left: 5%;
+	padding-right: 5%;
+}
