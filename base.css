@@ -1,0 +1,55 @@
+body{
+	background-image: url("background.jpg");
+	font-family: 'IM Fell Double Pica', serif;
+	/* #CDD8CF; E1F0E7*/
+	margin: 6px;
+	padding: 2%;
+	border-style: double;
+	border-color: #380500;
+	border-width: 12px;
+}
+
+.Site {
+  display: flex;
+  min-height: 88vh;
+  flex-direction: column;
+  align-items: center;
+}
+
+.Site-content {
+  flex: 1;
+}
+
+h1{
+	font-size: 42pt;
+	
+}
+
+h2{
+	font-size: 24pt;
+}
+
+p{
+	font-family: 'IM Fell Double Pica', serif;
+	font-size: 16pt;
+}
+
+h1, h2, h3 {
+	font-family: 'Petit Formal Script', cursive;
+}
+
+.footer {
+  /*position: absolute;*/
+  left: 0;
+  bottom: 2%;
+  width: 100%;
+  text-align: center;
+  font-size: 10pt;
+}
+
+a:link{
+	color: #000a4f;
+}
+a:visited{
+	color: #380500;
+}

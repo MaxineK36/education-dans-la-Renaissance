@@ -1,0 +1,41 @@
+body{
+	padding: 0%;
+}
+
+.Site{
+	text-align: center;
+}
+
+table{
+	margin-left:auto;
+	margin-right:auto;
+
+}
+
+td{
+	padding: 5px;
+}
+
+h2{
+	font-size: 30pt;
+}
+
+.section{
+	font-family: 'IM Fell Double Pica', serif;
+}
+/*
+
+#main{
+	width: auto;
+	background-color: rgba(52, 64, 53, 0.4); 
+	border-radius : 30px;
+	display: inline-block;
+
+}
+*/
+
+img{
+	width: 40%;
+	margin-bottom: 20px;
+	text-align: center;
+}
