@@ -1,0 +1,24 @@
+<html>
+<head>
+	<link href="https://fonts.googleapis.com/css?family=Lobster|Cardo|Crimson+Text|IM+Fell+Double+Pica|Petit+Formal+Script&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="base.css">
+<link rel="stylesheet" href="index.css">
+</head>
+<body>
+
+<h1 class = "welcome"> Bien fait! </h1>
+<p> Vous êtes prêt à éduquer un enfant de la Renaissance qui va devenir un adult savant, sage et moral. </p>
+<p> Pour retourner à la dernière question et choisir autrement, cliquez <a id="prev_question">ici</a>. </p>
+<p> Pour retourner au début et pour refaire l'exercice en totalité, cliquez <a href="index.html">ici</a>. </p>
+<p> Pour voir mes sources, cliquez <a href="sources.html">ici</a>. </p>
+
+<script>
+	var urlParams = new URLSearchParams(window.location.search);
+	var id = urlParams.get('id'); 
+	console.log(id); 
+
+	document.getElementById('prev_question').href = "Questions/question"+ id + ".html"
+</script>
+
+</body>
+</html>

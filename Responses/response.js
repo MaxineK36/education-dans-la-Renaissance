@@ -1,4 +1,7 @@
 function createResponse(info){
+	info["endpage"] = "../fail1.html";
+	info["successpage"] = "../success1.html";
+
 	me = info["question_id"];
 	next = info["next_question"];
 	section = info["section_title"];
@@ -32,8 +35,14 @@ function createResponse(info){
 	e_prev = document.createElement("td");
 	e_prev.innerHTML = "<a href = '../Questions/question"+me+".html'> Retour </a>";
 	e_next = document.createElement("td");
+
 	if (info["end"]){
-		e_next.innerHTML = "<a href = '" + info["endpage"] + "'> Continue </a>";
+		if (info["success"]){
+			e_next.innerHTML = "<a href = '../success.html?id=" + me + "'> Continue jusqu'à la fin </a>";
+		} else {
+			e_next.innerHTML = "<a href = '../fail.html?id=" + me + "'> Continue jusqu'à la fin </a>";
+		}
+		
 	} else {
 		e_next.innerHTML = "<a href = '../Questions/question"+next+".html'> Continue </a>"
 	}
